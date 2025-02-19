@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+.navbar img {
+    width: 150px;
+    margin-left: 40px;
+
+}
+.menu a {
+    padding-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu button {
+    background-color: black;
+    color: white;
+    padding: 8px 12px 8px;
+    border-radius: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    border: none;
+}
+.menu button:hover {
+    background-color: #181818;
+}
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F4F6F5;
+    border-radius: 20px;
+    margin: 0px 60px 0px 60px;
+}
+.landing img {
+    width: 400px;
+}
+.text-landing {
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+.landing h1 {
+    font-size: 60px;
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+
+.unique {
+    position: relative;
+    display: inline-block; /* Supaya hanya selebar teks */
+    z-index: 1; /* Pastikan teks tetap di atas background */
+}
+
+.unique::before {
+    content: "";
+    position: absolute;
+    left: -5%; /* Supaya lebih lebar sedikit ke kiri */
+    padding-right: 20%;
+    top: 5%; /* Biarkan tetap di bawah */
+    width: 110%; /* Buat sedikit lebih lebar dari teks */
+    height: 1.2em;
+    background-color: #ead65c;
+    z-index: -1; /* Pastikan background tetap di bawah teks */
+    transform: rotate(-3deg); /* Miringkan hanya background */
+    pointer-events: none; /* Mencegah background mempengaruhi interaksi */
+}
+
+
+.btn-shop {
+    background-color: black;
+    color: white;
+    padding: 8px 12px 8px;
+    border-radius: 10px;
+    margin: 20px 0px 40px;
+    cursor: pointer;
+    border: none;
+}
+.btn-shop:hover {
+    background-color: #181818;
+}
+.sponsor {
+    background-color: #EBD96B;
+    justify-items: center;
+    align-items: baseline;
+    align-content: center;
+    padding: 30px;
+}
+
+.sponsor img {
+    width: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.section-brand{
+    padding: 30px;
+
+}
+.section-brand h1 {
+    font-weight: bold;
+    padding: 0px 0px 0px 30px;
+}
+
+.brand-container {
+    display: inline-flex;
+    gap: 50px;
+    justify-items: center;
+    flex-direction: row;
+    padding: 35px;
+}
+.brand-container img {
+    max-width: 350px;
+
+}
+
+.payday {
+    background-color: #e8c947;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-payday {
+    margin-right: 25%;
+
+}
+.text-payday h1 {
+font-weight: 800;
+font-size: 60px;
+
+}
+.text-payday h4 {
+padding-top: 20px;
+
+}
+.payday img {
+    width: 600px;
+
+}
