@@ -5,36 +5,55 @@
     margin: 0%;
     font-family: "Poppins", serif;
 }
+:root {
+    --gold :#E6C744;
+    --white :#ffffff;
+    --black :#000000;
+    --pink :#C2C8DA; 
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-
 }
 .navbar img {
     width: 150px;
     margin-left: 40px;
-
 }
+
+.toggle-button {
+    display: none;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .menu a {
     padding-right: 40px;
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 
 .menu button {
     background-color: black;
     color: white;
-    padding: 8px 12px 8px;
+    padding: 8px 12px;
     border-radius: 10px;
     margin-right: 40px;
     cursor: pointer;
     border: none;
 }
+
 .menu button:hover {
     background-color: #181818;
 }
+
 .landing {
     display: flex;
     align-items: center;
@@ -58,22 +77,22 @@
 
 .unique {
     position: relative;
-    display: inline-block; /* Supaya hanya selebar teks */
-    z-index: 1; /* Pastikan teks tetap di atas background */
+    display: inline-block;
+    z-index: 1; 
 }
 
 .unique::before {
     content: "";
     position: absolute;
-    left: -5%; /* Supaya lebih lebar sedikit ke kiri */
+    left: -5%;
     padding-right: 20%;
-    top: 5%; /* Biarkan tetap di bawah */
-    width: 110%; /* Buat sedikit lebih lebar dari teks */
+    top: 5%;
+    width: 110%;
     height: 1.2em;
-    background-color: #ead65c;
-    z-index: -1; /* Pastikan background tetap di bawah teks */
-    transform: rotate(-3deg); /* Miringkan hanya background */
-    pointer-events: none; /* Mencegah background mempengaruhi interaksi */
+    background-color: var(--gold);
+    z-index: -1;
+    transform: rotate(-3deg);
+    pointer-events: none;
 }
 
 
@@ -89,18 +108,23 @@
 .btn-shop:hover {
     background-color: #181818;
 }
-.sponsor {
-    background-color: #EBD96B;
-    justify-items: center;
-    align-items: baseline;
+.sponsor-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gold);
+    justify-content: space-around;
     align-content: center;
+    align-items: center;
     padding: 30px;
+    margin: 20px 0px;
+    gap: 15px;
+    height: auto;
 }
 
 .sponsor img {
-    width: 80px;
-    padding-left: 20px;
-    padding-right: 30px;
+    width: 5.5rem;
+    height: 3rem;
+    object-fit: contain;
 }
 
 .section-brand{
@@ -113,10 +137,10 @@
 }
 
 .brand-container {
-    display: inline-flex;
+    display: flex;
     gap: 50px;
+    flex-wrap: wrap;
     justify-items: center;
-    flex-direction: row;
     padding: 35px;
 }
 .brand-container img {
@@ -125,7 +149,7 @@
 }
 
 .payday {
-    background-color: #e8c947;
+    background-color: var(--gold);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,5 +169,175 @@ padding-top: 20px;
 }
 .payday img {
     width: 600px;
+}
+
+.section-favorite{
+    padding: 30px;
+
+}
+.section-favorite h1 {
+    font-weight: bold;
+    padding: 0px 0px 0px 30px;
+}
+
+.favorite-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 35px;
+    align-content: center;
+}
+.favorite-container img {
+    max-width: 35rem;
+
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.app img {
+    width: 25rem;
+
+}
+.app h1 {
+    font-weight: 800;
+    font-size: 40px;
+}
+.spesial-text {
+    padding-top: 2rem;
+}
+
+@media (max-width: 860px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar img {
+        margin: 0 auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu button {
+        margin: 10px 0;
+    }
+
+    .toggle-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+        margin: 10px auto;
+    }
+
+    .landing {
+        flex-direction: column;
+    }
+    .landing img {
+        display: none;
+    }
+    .sponsor-container img {
+        width: 5rem;
+        height: 3rem;
+    }
+    .brand-container {
+        justify-content: center;
+    }
+    .highlighted-text-arrivals {
+    text-align: center;
+    }
+    .payday img {
+        width: 400px;
+    }
+    .text-payday {
+        margin-top: 2rem;
+    
+    }
+    .text-payday h1 {
+    font-weight: 800;
+    font-size: 50px;
+    
+    }
+    .text-payday h4 {
+    padding-top: 10px;
+    
+    }
+}
+
+@media (max-width: 600px) {
+    .payday img {
+        display: none;
+    }
+    .text-payday {
+        margin-left: 4rem;
+    
+    }
+    .text-payday h1 {
+    font-weight: 800;
+    font-size: 40px;
+    
+    }
+    .text-payday h4 {
+    padding-top: 20px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .text-landing {
+        padding-left: 1rem;
+    }
+    .text-landing p {
+       font-size: small;
+    }
+    .landing h1 {
+        font-size: 45px;
+        padding-bottom: 0px;
+        font-weight: bold;
+    }
+    .brand-container {
+        justify-content: center;
+    }
+    .highlighted-text-arrivals {
+        text-align: center;
+    }
+    .section-brand h1{
+        padding: 0px;
+    
+    }
+    .favorite-container {
+        justify-content: center;
+    }
+    .favorite-container img {
+        width: 20rem;
+    }
+    .text-favorite {
+        text-align: center;
+    }
+    .section-favorite h1{
+        padding: 0px;
+    
+    }
 
 }

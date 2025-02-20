@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
         <img src="assets/img/logo.png" alt="logo" />
+        <button class="toggle-button">☰</button>
         <ul class="menu">
           <a href="">CATALOG</a>
           <a href="">FASHION</a>
@@ -18,50 +19,85 @@
           <button>SIGN UP</button>
         </ul>
       </nav>
-      <section class="landing">
-        <div class="text-landing">
-          <h1>LET’S</h1>
-          <h1>EXPLORE</h1>
-          <h1 class="unique">UNIQUE</h1>
-          <h1>CLOTHES.</h1>
-          <p>Live for Influential and Innovative fashion!</p>
+    </header>
+    <section class="landing">
+      <div class="text-landing">
+        <h1>LET’S</h1>
+        <h1>EXPLORE</h1>
+        <h1 class="unique">UNIQUE</h1>
+        <h1>CLOTHES.</h1>
+        <p>Live for Influential and Innovative fashion!</p>
+        <button class="btn-shop">Shop Now</button>
+      </div>
+      <img src="assets/img/people.png" alt="people" />
+    </section>
+    <section class="sponsor">
+      <div class="sponsor-container">
+        <img src="/assets/img/icon/Rectangle 36.png" alt="him" />
+        <img src="/assets/img/icon/Rectangle 44.png" alt="obey" />
+        <img src="/assets/img/icon/Rectangle 38.png" alt="shopify" />
+        <img src="/assets/img/icon/Rectangle 45.png" alt="lacoste" />
+        <img src="/assets/img/icon/Rectangle 43.png" alt="levis" />
+        <img src="/assets/img/icon/Rectangle 41.png" alt="amazon" />
+      </div>
+    </section>
+    <section class="section-brand">
+      <h1 class="highlighted-text-arrivals">NEW ARRIVALS</h1>
+      <div class="brand-container">
+        <img src="/assets/img/brand/Frame 15.png" alt="frame15" />
+        <img src="/assets/img/brand/Frame 16.png" alt="frame16" />
+        <img src="/assets/img/brand/Frame 17.png" alt="frame17" />
+      </div>
+    </section>
+    <section class="section-payday">
+      <div class="payday">
+        <img src="/assets/img/people2.png" alt="people2" />
+        <div class="text-payday">
+          <h1>PAYDAY</h1>
+          <h1>SALE NOW</h1>
+          <p>
+            Spend minimal $100 get 30% off <br />
+            voucher code for your next purchase
+          </p>
+          <h4>1 June - 10 June 2025</h4>
+          <p>*Terms & Conditions apply</p>
           <button class="btn-shop">Shop Now</button>
         </div>
-        <img src="assets/img/people.png" alt="" />
-      </section>
-      <section class="sponsor">
-        <div>
-          <img src="/assets/img/icon/Rectangle 36.png" alt="him" />
-          <img src="/assets/img/icon/Rectangle 44.png" alt="obey" />
-          <img src="/assets/img/icon/Rectangle 38.png" alt="shopify" />
-          <img src="/assets/img/icon/Rectangle 45.png" alt="lacoste" />
-          <img src="/assets/img/icon/Rectangle 43.png" alt="levis" />
-          <img src="/assets/img/icon/Rectangle 41.png" alt="amazon" />
-        </div>
-      </section>
-      <section class="section-brand">
-        <h1 class="highlighted-text-arrivals">NEW ARRIVALS</h1>
-        <div class="brand-container">
-          <img src="/assets/img/brand/Frame 15.png" alt="frame15" />
-          <img src="/assets/img/brand/Frame 16.png" alt="frame15" />
-          <img src="/assets/img/brand/Frame 17.png" alt="frame15" />
-        </div>
-      </section>
-      <section class="section-payday">
-        <div class="payday">
-          <img src="/assets/img/people2.png" alt="" />
-          <div class="text-payday">
-            <h1>PAYDAY</h1>
-            <h1>SALE NOW</h1>
-            <p>
-              Spend minimal $100 get 30% off <br> voucher code for your next purchase
-            </p>
-            <h4>1 June - 10 June 2025</h4>
-            <p>*Terms & Conditions apply</p>
-            <button class="btn-shop">Shop Now</button>
-          </div>
-        </div>
-      </section>
-    </header>
+      </div>
+    </section>
+    <section class="section-favorite">
+      <h1 class="text-favorite">Young's Favourite</h1>
+      <div class="favorite-container">
+        <img src="/assets/img/brand/Group 79.png" alt="Group79" />
+        <img src="/assets/img/brand/Group 80.png" alt="Group80" />
+      </div>
+    </section>
+    <section class="app">
+      <div class="text-app">
+        <h1>DOWNLOAD APP &</h1>
+        <h1>GET THE VOUCHER!</h1>
+        <p  class="spesial-text">Get 30% off for first transaction using</p>
+        <P>Rondovision mobile app for now.</P>
+        <button class="btn-download">
+          <p>Download on the</p>
+          <h3>App Store</h3>
+          <img src="/assets/img/icon/icons-apple.png" alt="">
+        </button>
+        <button class="btn-download">
+          <p>GET IT ON</p>
+          <h3>Google Play</h3>
+          <img src="/assets/img/icon/icons-google-play.png" alt="">
+        </button>
+      </div>
+      <img src="assets/img/Mobile app.png" alt="people" />
+    </section>
+    <script>
+      const toggleButton = document.querySelector(".toggle-button");
+      const menu = document.querySelector(".menu");
+
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
