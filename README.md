@@ -29,5 +29,5 @@ Proyek ini adalah tampilan front-end untuk website katalog yang dibuat menggunak
 <li>Jalankan dengan membuka index.html di browser</li>
 
 <h1>Preview</h1>
-![Macbook-Air-127 0 0 1 (5)](https://github.com/user-attachments/assets/e1fdb6c9-291a-434d-a917-11b98092415b)
+![Preview](assets/img/Macbook-Air-127.0.0.1 (5).png)
 
