@@ -24,13 +24,11 @@ Proyek ini adalah tampilan front-end untuk website katalog yang dibuat menggunak
   git clone https://github.com/liksssss/front-end-fashion.git
 
 <li>Buka folder proyek</li>
-  ![image](https://github.com/user-attachments/assets/795afdd0-42df-4003-bed0-f9d9bbd0e440)
+  cd frond-end-fashion
 
 
 <li>Jalankan dengan membuka index.html di browser</li>
 
-<h1>Preview</h1>
-![image](https://github.com/user-attachments/assets/97163b74-990a-4b18-a19c-a163ae4a4cf8)
 
 
 
