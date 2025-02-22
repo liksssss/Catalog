@@ -17,6 +17,8 @@ Proyek ini adalah tampilan front-end untuk website katalog yang dibuat menggunak
 
 <li>CSS3 untuk desain dan layout</li>
 
+<li>JavaScript untuk interaktivitas dan fitur dinamis</li>
+
 <h1>Cara Menggunakan</h1>
 
 <li>Clone repository ini ke komputer Anda</li>
