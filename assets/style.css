@@ -9,7 +9,8 @@
     --gold :#E6C744;
     --white :#ffffff;
     --black :#000000;
-    --pink :#C2C8DA; 
+    --pink :#C2C8DA;
+    --hover :#1f1e1e; 
 }
 .navbar {
     display: flex;
@@ -50,8 +51,8 @@
     border: none;
 }
 
-.menu button:hover {
-    background-color: #181818;
+.sign-up:hover {
+    background-color: var(--hover);
 }
 
 .landing {
@@ -106,7 +107,7 @@
     border: none;
 }
 .btn-shop:hover {
-    background-color: #181818;
+    background-color: var(--hover);
 }
 .sponsor-container {
     display: flex;
@@ -196,6 +197,7 @@ padding-top: 20px;
 .app {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 60px;
 }
@@ -207,10 +209,218 @@ padding-top: 20px;
     font-weight: 800;
     font-size: 40px;
 }
-.spesial-text {
+.special-text {
     padding-top: 2rem;
 }
+.btn-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px 8px 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    border: none;
+    width: 11rem;
+    height: 3.8rem;
+}
 
+.container-download {
+    display: flex;
+    padding: 3px;
+    gap: 3rem;
+    margin-top: 2.5rem;
+}
+.container-download img {
+    width: 2.6rem;
+}
+
+.icon-apple .icon-google {
+    padding: 5px;
+}
+.text-apple {
+    color: #ffffff;
+}
+.text-google {
+    color: #ffffff;
+}
+.container-community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gold);
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+input {
+    flex: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+}
+#btn-input {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0.4rem;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight:normal;
+}
+#btn-input:hover {
+    background-color: var(--hover);
+}
+
+.text-community {
+    text-align: center;
+    color: #ffffff;
+}
+.text-community h1 {
+    padding-top: 6rem;
+    font-weight: 800;
+    font-size: xx-large;
+}
+.text-community p {
+    padding: 1rem 0rem;
+}
+.footer-container {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5rem 4rem;
+}
+
+.text-footer-fashion {
+    color: var(--white);
+}
+.text-footer-fashion p {
+    font-weight: 100;
+    font-size: small;
+    padding-top: 1rem;
+}
+.footer-company {
+    display:flex ;
+    flex-direction: column;
+}    
+.text-footer-company {
+    display:flex ;
+    flex-direction: column;
+    color: var(--white);
+}
+.text-footer-company h3{
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+.text-footer-company a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 100;
+    font-size: small;
+}
+.text-footer-link {
+    display:flex ;
+    flex-direction: column;
+    color: var(--white);
+}
+.text-footer-link h3{
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+.text-footer-link a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 100;
+    font-size: small;
+}
+.text-footer-legal {
+    display:flex ;
+    flex-direction: column;
+    color: var(--white);
+}
+.text-footer-legal h3{
+    padding-bottom: 1rem;
+    font-weight:normal;
+}
+.text-footer-legal p{
+    font-weight: 100;
+    font-size: small;
+}
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+.footer-icon img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.icon-facebook {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-facebook a {
+    display: flex;
+    justify-content: center;
+}
+.icon-instagram {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-instagram a {
+    display: flex;
+    justify-content: center;
+}
+.icon-twitter {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-twitter a {
+    display: flex;
+    justify-content: center;
+}
+.icon-linkedin {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-linkedin a {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 860px) {
     .navbar {
         flex-wrap: wrap;
@@ -265,7 +475,7 @@ padding-top: 20px;
         justify-content: center;
     }
     .highlighted-text-arrivals {
-    text-align: center;
+        text-align: center;
     }
     .payday img {
         width: 400px;
@@ -282,6 +492,18 @@ padding-top: 20px;
     .text-payday h4 {
     padding-top: 10px;
     
+    }
+    .favorite-container {
+        justify-content: center;
+    }
+    .text-favorite {
+        text-align: center;
+    }
+}
+@media (max-width: 750px) {
+    .footer-container {
+        padding-bottom: 1rem;
+        gap: 1rem;
     }
 }
 
@@ -301,6 +523,46 @@ padding-top: 20px;
     .text-payday h4 {
     padding-top: 20px;
     
+    }
+    .favorite-container {
+        justify-content: center;
+    }
+    .text-favorite {
+        text-align: center;
+    }
+    .text-app h1 {
+        font-size: 2rem;
+    }
+    .text-app p {
+        font-size: 0.8rem;
+    }
+    .btn-download {
+        width: 8rem;
+        height: 3rem;
+    }
+    .icon-apple img {
+        width: 2.2rem;
+    }
+    .icon-google img {
+        width: 2.2rem;
+    }
+    .text-apple p {
+        font-size: 0.5rem;
+    }
+    .text-apple h3 {
+        font-size: 0.7rem;
+    }
+    .text-google p {
+        font-size: 0.6rem;
+    }
+    .text-google h3 {
+        font-size: 0.7rem;
+    }
+    .container-download {
+        gap: 2.2rem;
+    }
+    #img-app {
+        width: 22rem;
     }
 }
 
@@ -339,5 +601,13 @@ padding-top: 20px;
         padding: 0px;
     
     }
-
+    .favorite-container {
+        justify-content: center;
+    }
+    .text-favorite {
+        text-align: center;
+    }
+    .input-container{
+        width: 300px;
+    }
 }

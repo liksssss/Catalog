@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping</title>
+    <title>Fashion</title>
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
@@ -16,7 +16,7 @@
           <a href="">FASHION</a>
           <a href="">FAVOURITE</a>
           <a href="">LIFESTYLE</a>
-          <button>SIGN UP</button>
+          <button class="sign-up">SIGN UP</button>
         </ul>
       </nav>
     </header>
@@ -76,20 +76,104 @@
       <div class="text-app">
         <h1>DOWNLOAD APP &</h1>
         <h1>GET THE VOUCHER!</h1>
-        <p  class="spesial-text">Get 30% off for first transaction using</p>
-        <P>Rondovision mobile app for now.</P>
-        <button class="btn-download">
-          <p>Download on the</p>
-          <h3>App Store</h3>
-          <img src="/assets/img/icon/icons-apple.png" alt="">
-        </button>
-        <button class="btn-download">
-          <p>GET IT ON</p>
-          <h3>Google Play</h3>
-          <img src="/assets/img/icon/icons-google-play.png" alt="">
-        </button>
+        <p class="special-text">Get 30% off for first transaction using</p>
+        <p>Rondovision mobile app for now.</p>
+        <div class="container-download">
+          <button class="btn-download">
+            <div class="icon-apple">
+              <img src="/assets/img/icon/icons-apple.png" alt="" />
+            </div>
+            <div class="text-apple">
+              <p>Download on the</p>
+              <h3>App Store</h3>
+            </div>
+          </button>
+          <button class="btn-download">
+            <div class="icon-google">
+              <img src="/assets/img/icon/icons-google-play.png" alt="" />
+            </div>
+            <div class="text-google">
+              <p>GET IT ON</p>
+              <h3>Google Play</h3>
+            </div>
+          </button>
+        </div>
       </div>
-      <img src="assets/img/Mobile app.png" alt="people" />
+      <img id="img-app" src="assets/img/Mobile app.png" alt="people" />
+    </section>
+    <section class="community">
+      <div class="container-community">
+        <div class="text-community">
+          <h1>JOIN SHOPPING COMMUNITY TO <br />GET MONTHLY PROMO</h1>
+          <p>Type your email down below and be young wild generation</p>
+        </div>
+        <div class="input-container">
+          <input type="email" placeholder="Add your email here" />
+          <button id="btn-input" onclick="sendEmail()">SEND</button>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-fashion">
+            <div class="text-footer-fashion">
+              <h1>FASHION</h1>
+              <p>Complete your style with awesome <br />clothes from us.</p>
+            </div>
+            <div class="footer-icon">
+              <div class="icon-facebook">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img src="/assets/img/icon/icons8-facebook-f-24.png" alt="" />
+                </a>
+              </div>
+              <div class="icon-instagram">
+                <a href="https://www.instagram.com" target="_blank">
+                  <img src="/assets/img/icon/icons8-instagram-24.png" alt="" />
+                </a>
+              </div>
+              <div class="icon-twitter">
+                <a href="https://www.twitter.com" target="_blank">
+                  <img
+                    src="/assets/img/icon/icons8-twitter-bird-30.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="icon-linkedin">
+                <a href="https://www.linkedin.com" target="_blank">
+                  <img src="/assets/img/icon/icons8-linkedin.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-company">
+            <div class="text-footer-company">
+              <h3>Company</h3>
+              <a href="#">About</a>
+              <a href="#">Contact us</a>
+              <a href="#">Support</a>
+              <a href="#">Carres</a>
+            </div>
+          </div>
+          <div class="footer-link">
+            <div class="text-footer-link">
+              <h3>Quick Link</h3>
+              <a href="#">Share Location</a>
+              <a href="#">Order Tracking</a>
+              <a href="#">Size Guide</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+          <div class="footer-legal">
+            <div class="text-footer-legal">
+              <h3>Legal</h3>
+              <p>Terms & condition</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
     <script>
       const toggleButton = document.querySelector(".toggle-button");
@@ -98,6 +182,10 @@
       toggleButton.addEventListener("click", () => {
         menu.classList.toggle("active");
       });
+      function sendEmail() {
+        window.location.href =
+          "mailto:imammalik927@gmail.com?subject=Judul Email&body=Isi pesan";
+      }
     </script>
   </body>
 </html>
