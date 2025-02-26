@@ -108,7 +108,7 @@
           <p>Type your email down below and be young wild generation</p>
         </div>
         <div class="input-container">
-          <input type="email" placeholder="Add your email here" />
+          <input type="email" id="email-input" placeholder="Add your email here" />
           <button id="btn-input" onclick="sendEmail()">SEND</button>
         </div>
       </div>
@@ -175,17 +175,6 @@
         </div>
       </footer>
     </section>
-    <script>
-      const toggleButton = document.querySelector(".toggle-button");
-      const menu = document.querySelector(".menu");
-
-      toggleButton.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
-      function sendEmail() {
-        window.location.href =
-          "mailto:imammalik927@gmail.com?subject=Judul Email&body=Isi pesan";
-      }
-    </script>
+    <script src="/assets/script.js"></script>  
   </body>
 </html>
